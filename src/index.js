@@ -77,7 +77,11 @@ window.addEventListener("load", (event) => {
             console.log(gameOver);
             if (gameOver) {
               alert("You Win !!!");
-              startGame();
+              setTimeout(() => {
+                startGame();
+                memoryGame.pairsClicked = 0;
+                memoryGame.pairsGuessed = 0;
+              }, 500);
             }
           }
         }
