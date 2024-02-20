@@ -60,7 +60,6 @@ window.addEventListener("load", (event) => {
           if (!temp) {
             setTimeout(() => {
               memoryGame.pickedCards.forEach((element) => {
-                console.log(element);
                 element.classList.remove("turned");
               });
               memoryGame.pickedCards.length = 0;
@@ -74,7 +73,6 @@ window.addEventListener("load", (event) => {
               el.classList.add("blocked");
             });
             memoryGame.pickedCards.length = 0;
-            console.log(gameOver);
             if (gameOver) {
               alert("You Win !!!");
               setTimeout(() => {
